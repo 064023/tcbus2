@@ -1,0 +1,71 @@
+<!DOCTYPE 
+html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns=
+"http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type"
+  content="text/html; charset=utf-8" />
+
+  <title>臺中市公車路線圖</title>
+  <link type="text/css" rel="stylesheet" href="leaflet.css" />
+  <link type="text/css" rel=
+  "stylesheet" href="tcbus.css" />
+  <script type="text/javascript" src="leaflet.js">
+</script>
+  <script type="text/javascript" src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+</script>
+  <script type="text/javascript" src="tcbus.js">
+</script>
+</head>
+
+<body>
+  <h1>臺中市公車路線圖</h1>
+
+  <div id="map_pane">
+      <div id="tcbus_map_canvas"></div>
+
+    <!-- div>
+      <p>如果地圖一片空白， 請先造訪 <a href=
+	"https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">
+	這一頁</a>， 告訴瀏覽器你信任這個網站，
+	然後重新整理網頁。>
+    </div -->
+  </div>
+
+  <div id="info_pane">
+
+
+    <div id="route_selector">
+      <h3>勾選路線：</h3>
+
+<p>(目前的版本只能增加， 無法移除)</p>
+<form id="rsform">
+</form>
+    </div>
+
+    <div>
+      <h3>站牌詳細資訊：</h3>
+
+      <p>(請點站牌)</p>
+      <span id="stop_details"></span>
+    </div>
+
+    <div>
+      <h3>路線資訊：</h3>
+
+      <p>(請點路線)</p>
+      <span id="route_summary"></span><br />
+      <span id="route_details"></span>
+    </div>
+
+    <p class="footnote">詳見 <a href=
+    "https://g0v.github.io/tcbus/">g0v
+    上的 tcbus 專案</a></p>
+  </div>
+</body>
+</html>
